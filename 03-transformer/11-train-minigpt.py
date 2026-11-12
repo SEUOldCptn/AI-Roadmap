@@ -1,7 +1,7 @@
 """Train MiniGPT on explicit question/answer records with answer-only loss.
 
 Run from the repository root:
-    python "03-transfomer/11-train-minigpt.py" --steps 1200
+    python "03-transformer/11-train-minigpt.py" --steps 1200
 """
 from __future__ import annotations
 
@@ -338,7 +338,7 @@ def main():
         print(f"Train loss at best checkpoint: {best_train_loss:.4f}")
         print(f"Validation loss at best checkpoint: {best_val_loss:.4f}")
     print("\nNext command:")
-    print('python "03-transfomer/12-chat-minigpt.py" --top-k 1 --no-history')
+    print('python "03-transformer/12-chat-minigpt.py" --top-k 1 --no-history')
 
 
 if __name__ == "__main__":
