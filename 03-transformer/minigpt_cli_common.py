@@ -31,7 +31,7 @@ def load_minigpt_class():
     if not MODEL_SOURCE.exists():
         raise FileNotFoundError(
             f"找不到模型文件：{MODEL_SOURCE}\n"
-            "请确认本项目放在仓库的 03-transfomer 目录，并保留原来的 08-mini-gpt.py。"
+            "请确认本项目放在仓库的 03-transformer 目录，并保留原来的 08-mini-gpt.py。"
         )
     spec = importlib.util.spec_from_file_location("ai_roadmap_mini_gpt", MODEL_SOURCE)
     if spec is None or spec.loader is None:

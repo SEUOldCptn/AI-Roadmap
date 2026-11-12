@@ -2,9 +2,9 @@
 
 目标：理解动态加入/退出请求，以及每条请求独立 KV Cache 的生命周期。
 
-放置位置：03-transfomer/10-continuous-batching-exercise.py
-运行：python 03-transfomer/10-continuous-batching-exercise.py
-可选（运行 MiniGPT）：python 03-transfomer/10-continuous-batching-exercise.py --real
+放置位置：03-transformer/10-continuous-batching-exercise.py
+运行：python 03-transformer/10-continuous-batching-exercise.py
+可选（运行 MiniGPT）：python 03-transformer/10-continuous-batching-exercise.py --real
 
 注意：这是 iteration-level 调度器教学模拟。为避免引入变长批量 Attention，
 本脚本的 engine 对每条请求分别调用，不等同于一次 GPU batched forward，

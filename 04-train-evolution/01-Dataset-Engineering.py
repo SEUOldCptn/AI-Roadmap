@@ -154,7 +154,7 @@ def get_batch(data, batch_size, context_size):
     y_sample = []
     if len(data) <= context_size:
         raise ValueError("Input data too short!")
-    start = torch.randint(0, len(data) - context_size + 1, (batch_size,), dtype=torch.long)
+    start = torch.randint(0, len(data) - context_size, (batch_size,), dtype=torch.long)
     for idx in start:
         x_sample.append(data[idx:idx + context_size])
         y_sample.append(data[idx+1:idx + context_size+1])
